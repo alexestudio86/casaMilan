@@ -1,0 +1,17 @@
+.bg-parallax {
+background-image: url(https://1.bp.blogspot.com/-v1ZqXU-sy-c/YOMkYvOnMdI/AAAAAAABA7I/MFy5V_rH76suYqUQhdIRjLMgqxePy86UgCLcBGAsYHQ/d/bg-header-01.png);
+min-height: 100vh;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.bg-parallax-02 {
+    background-image: url(https://1.bp.blogspot.com/-IjZvubjiFho/YOJSwZm8VPI/AAAAAAABA3k/S7d1G5bn7gEauNKqmJ_oW7S-rTNGVMVDwCLcBGAsYHQ/d/bg-header-03.jpg);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
