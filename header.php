@@ -15,25 +15,7 @@
 <!-- Nav -->
 <nav class="w3-row w3-bar w3-to w3-white">
     <div class="w3-bar w3-content w3-white">
-        <?php if ( has_custom_logo() ) : ?>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="w3-bar-item py-1 pr-3">
-                <?php
-                    $custom_logo_id = get_theme_mod( 'custom_logo' );
-                    $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );                    
-                    if ( has_custom_logo() ) {
-                        echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '" class="w3-image w-100">';
-                    }
-                ?>
-            </a>
-		<?php endif; ?>
-        <?php if ( has_nav_menu( 'primary' ) ) : ?>
-            <?php wp_nav_menu(
-                array(
-                'theme_location'    =>  'primary',
-                'depth'             =>  2,
-                'menu_class'        =>  'w3-rest',
-                )
-            ); ?>
-        <?php endif; ?>
+        <?php get_template_part('template-parts/logo'); ?>
+        <?php get_template_part('template-parts/navbar'); ?>
     </div>
 </nav>
